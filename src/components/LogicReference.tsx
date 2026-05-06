@@ -31,11 +31,11 @@ export default function LogicReference() {
   const individualMarkets: MarketName[] = ['Brunei', 'Hong Kong', 'Malaysia', 'Singapore', 'Philippines'];
   
   return (
-    <div className="space-y-12 animate-in fade-in duration-500 ease-out pb-12 bg-white p-6 border border-[#000080]">
+    <div className="space-y-12 animate-in fade-in duration-500 ease-out pb-12 bg-white p-6 border border-black">
       
       {/* SECTION 1: TERMINOLOGY */}
       <section>
-        <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-[#000080]/30 pb-2 text-[#000080]">
+        <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-black pb-2 text-[#000080]">
           1. Terminology Hierarchy (1st Decision)
         </h2>
         <div className="overflow-x-auto border border-black/30 bg-white">
@@ -88,7 +88,7 @@ export default function LogicReference() {
 
       {/* SECTION 2: FORMATTING */}
       <section>
-        <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-[#000080]/30 pb-2 text-[#000080]">
+        <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-black pb-2 text-[#000080]">
           2. Formatting Hierarchy (2nd Decision)
         </h2>
         <div className="overflow-x-auto border border-black/30 bg-white">
@@ -147,7 +147,7 @@ export default function LogicReference() {
       <div className="grid md:grid-cols-2 gap-12">
         {/* SECTION 3: DECISION RULEBOOK */}
         <section>
-          <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-[#000080]/30 pb-2 text-[#000080]">
+          <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-black pb-2 text-[#000080]">
             3. Decision Rulebook (Explainer)
           </h2>
           <div className="bg-slate-50 border border-black/30 p-5 space-y-4 text-sm leading-relaxed text-black">
@@ -168,7 +168,7 @@ export default function LogicReference() {
 
         {/* SECTION 4: CONDITION LEGEND */}
         <section>
-          <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-[#000080]/30 pb-2 text-[#000080]">
+          <h2 className="text-xs uppercase tracking-widest font-bold mb-4 border-b border-black pb-2 text-[#000080]">
             4. Condition Legend
           </h2>
           <div className="bg-slate-50 border border-black/30 p-5 space-y-4 text-sm leading-relaxed text-black">

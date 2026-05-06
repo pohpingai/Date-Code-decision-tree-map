@@ -22,11 +22,10 @@ export default function LogicEngine() {
       <div className="max-w-6xl w-full mx-auto flex flex-col flex-grow">
         
         {/* Header */}
-        <header className="flex flex-col md:flex-row md:justify-between md:items-baseline border-b-4 border-[#000080] pb-6 mb-8 mt-2">
+        <header className="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-black pb-6 mb-8 mt-2">
           <div className="flex flex-col">
-            <span className="text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">System Intelligence v4.02</span>
             <h1 className="text-3xl md:text-5xl font-serif font-bold tracking-tight pb-2 md:pb-0 text-[#000080]">
-              Compliance Logic Engine
+              Date Code Mapping
             </h1>
             <p className="text-sm mt-2 max-w-2xl text-stone-700">
               Select target markets to dynamically generate compliant date marking label patterns.
@@ -49,17 +48,16 @@ export default function LogicEngine() {
              </div>
              <div className="text-left md:text-right">
                <span className="text-sm font-mono bg-black text-white px-2 py-1 inline-block mb-1">STATUS: {activeTab === 'engine' ? 'ACTIVE_ANALYSIS' : 'REFERENCE_MODE'}</span>
-               <p className="text-[10px] uppercase tracking-widest text-[#000080]">Session: APAC-MARKETS-2024</p>
              </div>
           </div>
         </header>
 
         {activeTab === 'engine' ? (
-          <main className="grid lg:grid-cols-12 gap-0 flex-grow border border-[#000080]">
+          <main className="grid lg:grid-cols-12 gap-0 flex-grow border border-black">
             
             {/* Controls / Inputs */}
-            <section className="lg:col-span-4 p-6 border-b lg:border-b-0 lg:border-r border-[#000080] bg-slate-50">
-              <h2 className="text-xs uppercase tracking-widest font-bold mb-4 text-[#000080] border-b border-[#000080]/30 pb-2">Input Parameters</h2>
+            <section className="lg:col-span-4 p-6 border-b lg:border-b-0 lg:border-r border-black bg-slate-50">
+              <h2 className="text-xs uppercase tracking-widest font-bold mb-4 text-[#000080] border-b border-black pb-2">Input Parameters</h2>
               
               <div className="grid grid-cols-1 gap-2">
                 {MARKETS.map(market => {
@@ -113,7 +111,7 @@ export default function LogicEngine() {
               {result ? (
                 <div className="p-6 md:p-8 flex-grow flex flex-col justify-between animate-in fade-in duration-500 ease-out">
                   <div>
-                    <h2 className="text-xs uppercase tracking-widest font-bold mb-6 text-[#000080] border-b border-[#000080]/30 pb-2">Decision Matrix</h2>
+                    <h2 className="text-xs uppercase tracking-widest font-bold mb-6 text-[#000080] border-b border-black pb-2">Decision Matrix</h2>
                     
                     {result.isDualLine && (
                       <div className="border border-[#B22222] p-5 bg-[#fff8f8] mb-8">
